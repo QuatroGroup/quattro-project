@@ -20,14 +20,14 @@ To use this program, a date of the users choice must be selected and a corraspon
 
 ## Credits
 
-1.Collaborators 
+1. Collaborators 
 - [Adam Lebo](https://github.com/AdamLebo)
 - [Austin Quinn](https://github.com/Alphaquinn)
 - [Cody Hunt](https://github.com/codyrhunt77)
 - [Hugo Rodriguez](https://github.com/har015)
 - [Jacob Scobie](https://github.com/jscobie)
 - [Mackenzie Marsh](https://github.com/mcknzmrsh)
-2.API Content
+2. API Content
 - [Luke Peavey](https://github.com/lukePeavey)
 - [NASA](https://api.nasa.gov/)
 - [Quotable.IO](https://github.com/lukePeavey/quotable)
