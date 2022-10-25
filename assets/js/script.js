@@ -4,11 +4,11 @@ const nasaApiKey = "KsxQAhnaBa3ta5xtopfizfRFJXijS51NGnJLeb5g";
 
 function getNasaData() {
     userDate = $("#userDate")[0].value;
-    if (userDate > moment().format("MM/DD/YYYY")) {
+    if (userDate > moment().format("YYYY-MM-DD")) {
         // need a modal error
         alert("Enter today or earlier!");
         return;
-    } else if (userDate < moment("06-16-1995").format("MM/DD/YYYY")) {
+    } else if (userDate < moment("1995-06-16").format("YYYY-MM-DD")) {
         // need a modal error
         alert("Enter day after June 16th 1995")
         return;
@@ -47,3 +47,15 @@ $("#search-button").on("click", function (event) {
 })
 
 //Random date generator button?
+
+// var today = Date.now() // current date;
+// var minDate = moment(1995-06-17).format("YYYY-MM-DD");
+
+// function getRandomDate() {
+//     const minValue = "1995-06-16";
+//     const maxValue = Date.now();
+//     const timestamp = Math.floor(Math.random() * (maxValue - minValue + 1) + minValue);
+//     return new Date(timestamp);
+//
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+// }
