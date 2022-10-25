@@ -12,7 +12,9 @@ This project calls upon two seperate APIs to bring up a randomized inspirational
 
 ## Installation
 
-N/A
+```
+git clone https://github.com/QuatroGroup/quattro-project.git
+```
 
 ## Usage
 
