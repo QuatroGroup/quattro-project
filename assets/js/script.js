@@ -4,17 +4,27 @@ const nasaApiKey = "KsxQAhnaBa3ta5xtopfizfRFJXijS51NGnJLeb5g";
 
 function getNasaData() {
     userDate = $("#userDate")[0].value;
-    inputDate = moment(userDate).format("YYYY-MM-DD");
-    nasaLink = "https://api.nasa.gov/planetary/apod?api_key=" + nasaApiKey + "&date=" + inputDate
-    fetch(nasaLink).then(function (response) {
-        if (response.ok) {
-            response.json().then(function (data) {
-                $("#nasaImage")[0].src = data.url;
-                $("#nasaCaption")[0].textContent = data.explanation;
-                $("#nasaTitle")[0].textContent = data.title;
+    if (userDate > moment().format("MM/DD/YYYY")) {
+        // need a modal error
+        alert("Enter today or earlier!");
+        return;
+    } else if (userDate < moment("06-16-1995").format("MM/DD/YYYY")) {
+        // need a modal error
+        alert("Enter day after June 16th 1995")
+        return;
+    } else {
+            inputDate = moment(userDate).format("YYYY-MM-DD");
+            nasaLink = "https://api.nasa.gov/planetary/apod?api_key=" + nasaApiKey + "&date=" + inputDate
+            fetch(nasaLink).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (data) {
+                    $("#nasaImage")[0].src = data.url;
+                    $("#nasaCaption")[0].textContent = data.explanation;
+                    $("#nasaTitle")[0].textContent = data.title;
+                })
+            }
             })
-        }
-    })
+    }
 }
 
 function getQuote() {
