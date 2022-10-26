@@ -2,6 +2,7 @@ const nasaApiKey = "KsxQAhnaBa3ta5xtopfizfRFJXijS51NGnJLeb5g";
 
 function getNasaData() {
     // this takes the date in the input (random or date picker) and the using the NASA photo of the day to retur a photo and caption
+    userDate = $("#userDate")[0].value;
     inputDate = moment(userDate).format("YYYY-MM-DD");
     nasaLink = "https://api.nasa.gov/planetary/apod?api_key=" + nasaApiKey + "&date=" + inputDate
     fetch(nasaLink).then(function (response) {
