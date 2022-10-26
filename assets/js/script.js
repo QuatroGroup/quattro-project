@@ -46,16 +46,18 @@ $("#search-button").on("click", function (event) {
     getQuote();
 })
 
-//Random date generator button?
+$("#random-button").on("click", function (event) {
+    event.preventDefault();
+    getRandomDate();
+})
 
-// var today = Date.now() // current date;
-// var minDate = moment(1995-06-17).format("YYYY-MM-DD");
-
-// function getRandomDate() {
-//     const minValue = "1995-06-16";
-//     const maxValue = Date.now();
-//     const timestamp = Math.floor(Math.random() * (maxValue - minValue + 1) + minValue);
-//     return new Date(timestamp);
-//
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-// }
+function getRandomDate() {
+    const minValue = new Date(1997,0,1);
+    const maxValue = new Date();
+    var randomDate = new Date(minValue.getTime() + Math.random() * (maxValue.getTime() - minValue.getTime()))
+    $("#userDate")[0].value = moment(randomDate).format("YYYY-MM-DD");
+    $("#userDate")[0].textcontent = moment(randomDate).format("YYYY-MM-DD");
+    $(".quoteImage").addClass("visible");
+    getNasaData();
+    getQuote();
+}
