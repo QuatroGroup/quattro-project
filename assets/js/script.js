@@ -80,3 +80,9 @@ function alertModal(title, body) {
     $('#alert-modal-body').html(body); // sets body of the modal
     $('#alert-modal').modal('show'); // shows the modal window
   }
+
+  // localStorage.savedDate = $("#userDate")[0].value;
+  // $("#dropdown-buttons").append('<button class="dropdown-item" type="button">' + userDate + '</button>');
+  //  for (let i = 0; i< savedDate.length; i++) {
+  //    localStorage.getItem([i])
+  //  }
