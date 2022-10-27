@@ -20,6 +20,15 @@ git clone https://github.com/QuatroGroup/quattro-project.git
 
 To use this program, a date of the users choice must be selected and a corrasponding image taken by NASA on the specified date and a randomized inspirational quote will be displayed. The date can be selected between June 16th, 1995 up to the current date.
 
+## Userstory
+
+As a consumer 
+I Want a quote and an astronomy picture that inspires me to start the day.
+So that I can aspire to be better.
+
+
+
+
 ## Credits
 
 1. Collaborators 
@@ -38,4 +47,6 @@ To use this program, a date of the users choice must be selected and a corraspon
 ## License 
 
 N/A
+
+
 
