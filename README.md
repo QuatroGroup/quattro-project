@@ -20,19 +20,28 @@ git clone https://github.com/QuatroGroup/quattro-project.git
 
 To use this program, a date of the users choice must be selected and a corrasponding image taken by NASA on the specified date and a randomized inspirational quote will be displayed. The date can be selected between June 16th, 1995 up to the current date.
 
-## Userstory
+## User Story
 
 As a consumer 
 I Want a quote and an astronomy picture that inspires me to start the day.
 So that I can aspire to be better.
 
+## Acceptance Criteria
+
+GIVEN a date picker
+WHEN I select a date or click the random option
+THEN I am presented with NASA’s Astronomy Photo of The Day for the selected day and an inspirational quote
+WHEN I select the clear list option
+THEN the browser will clear and bring me back to the main page
+WHEN I click the saved dates button
+THEN a list of previously selected dates will show
 
 
 
 ## Credits
 
 1. Collaborators 
-- [Adam Lebo](https://github.com/AdamLebo)
+- [Adam Lieberman](https://github.com/AdamLebo)
 - [Austin Quinn](https://github.com/Alphaquinn)
 - [Cody Hunt](https://github.com/codyrhunt77)
 - [Hugo Rodriguez](https://github.com/har015)
