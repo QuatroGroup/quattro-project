@@ -31,13 +31,20 @@
                         <div class="col search-button-box shadow-lg rounded">
                             <button type="submit" class="btn btn-primary" id="random-button">Random</button>
                         </div>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Saved Dates
+                            </button>
+                            <ul class="dropdown-menu col" id="dropdown-buttons">
+                                <li><button class="dropdown-item" type="button">2022-09-07</button></li>
+                            </ul>
+                          </div>
+                        <div class="col del-button-box shadow-lg rounded">
+                            <button style="width:110px;" type="submit" class="btn btn-primary" id="del-button">Clear List</button>
+                        </div>
                     </div>
-                    <div class="date-list-box">
-                        <ul class="list-group col-8" id="date-list"></ul>
-                    </div>
-                    <div class="col-6 del-button-box justify-content-center mt-2 shadow-lg rounded">
-                        <button style="width:295px;" type="submit" class="btn btn-primary" id="del-button">Clear List</button>
-                    </div>
+                    
+                    
                 </form>
             </div>
         </section>
