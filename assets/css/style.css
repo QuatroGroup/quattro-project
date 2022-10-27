@@ -73,5 +73,30 @@ color: white;
     background-color: #422D53;
     border-radius: 30px;
 }
-
+#saved{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+#save2{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+h1{
+    font-family: Helvetica;
+    color: 4ababa;
+    animation: animate 1s ease-in-out infinite alternate;
+}
+@keyframes animate{
+    from{
+        text-shadow: 0 0 20px #289aab;
+    }
+    to{
+        text-shadow: 0 0 30px #289aab,
+                     0 0 10px #289aab;
+                     
+    }
+}
    
+      
