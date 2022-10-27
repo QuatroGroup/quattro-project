@@ -2,19 +2,41 @@
     visibility: hidden;
 }
 
-body{
-    background-color: lightgray;
- 
+body { 
+background-color: lightgray;
+background:scroll;
+background-image: url("/Users/mackenziemarsh/quattro-project/space-grey.jpeg");
+background-repeat: repeat-y;
+background-attachment: scroll;
+background-size: cover;
+max-width: auto;
 
 }
+
 img {
-    height:400px;
-    padding-right: 50%;
-    border: 25px;
-    
+  width:550px;
+  padding: 45px;
+border: 25px; 
+border-color: white;
 
+
+    
 }
 
-h1,h2, h3 {
-    
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+header {
+    color:#fff;
+}
+h1,h2,h3,h4 {
+    color:white;
+}
+div, p {
+    color:white;
 }
