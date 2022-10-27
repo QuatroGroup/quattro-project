@@ -50,14 +50,3 @@ $("#random-button").on("click", function (event) {
     event.preventDefault();
     getRandomDate();
 })
-
-function getRandomDate() {
-    const minValue = new Date(1997,0,1);
-    const maxValue = new Date();
-    var randomDate = new Date(minValue.getTime() + Math.random() * (maxValue.getTime() - minValue.getTime()))
-    $("#userDate")[0].value = moment(randomDate).format("YYYY-MM-DD");
-    $("#userDate")[0].textcontent = moment(randomDate).format("YYYY-MM-DD");
-    $(".quoteImage").addClass("visible");
-    getNasaData();
-    getQuote();
-}
