@@ -1,3 +1,77 @@
 .quoteImage {
     visibility: hidden;
 }
+p{
+  color: green;
+  text-align: center;
+
+}
+#random-button{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+#del-button{
+    color:white;
+    background-color: #422D53;
+    border-color: black;
+}
+#search-button{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+h2{
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    border-color: black;
+    background-color: #201F41;
+    color: white
+}
+
+h3,h4{
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    border-color: black;
+    background-color: #201F41;
+    color: white
+}
+#randomQuote{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    border-color: black;
+    background-color: #912e57;
+    color: white;
+}
+#randomAuthor{
+color: white;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+border-color: black;
+background-color: #912e57;
+color: white;
+}
+#nasaCaption{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    border-color: black;
+    background-color: #912e57;
+    color: white;   
+}
+#nasaImage{
+    padding: 20px;
+    background-color: #422D53;
+    border-radius: 30px;
+}
+
+   
