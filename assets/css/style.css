@@ -90,12 +90,12 @@ color: white;
     padding: 5px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
-  }
+}
   
-  .animated-fill-button:hover {
+.animated-fill-button:hover {
     background-color: #912e57 ;
     color: #fff;
-  }
+}
 #saved{
     color: white;
     background-color: #422D53;
@@ -120,4 +120,7 @@ h1{
                      0 0 10px #289aab;
                      
     }
+}
+button:hover {
+    font-weight: bold;
 }
