@@ -4,8 +4,12 @@
 p{
   color: green;
   text-align: center;
-
 }
+#search-section{
+padding: 5px;
+border-color: #422D53
+}
+
 #random-button{
     color: white;
     background-color: #422D53;
@@ -21,6 +25,12 @@ p{
     background-color: #422D53;
     border-color: black;
 }
+#dropdown-button{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+
 h2{
     margin-top: 10px;
     padding: 0px;
@@ -73,6 +83,19 @@ color: white;
     background-color: #422D53;
     border-radius: 30px;
 }
+.animated-fill-button {
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .animated-fill-button:hover {
+    background-color: #912e57 ;
+    color: #fff;
+  }
 #saved{
     color: white;
     background-color: #422D53;
@@ -98,5 +121,3 @@ h1{
                      
     }
 }
-   
-        

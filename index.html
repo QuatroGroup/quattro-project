@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" /> 
+   
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Astronomically Inspirational</title>
 </head>
@@ -14,24 +16,23 @@
     <header class="d-flex justify-content-center">
         <h1 class="p-1">Out of this World Imagery and Quote</h1>
     </header>
-
     <main>
         <section class="search-section d-flex justify-content-center">
             <div class="search-box">
                 <h3 class="d-flex justify-content-center m-1 mb-2 p-2">Select Date:</h3>
                 <form>
                     <div class="form-row d-flex justify-content-center">
-                        <div class="col search-field shadow-lg rounded">
+                        <div class="col search-field animated-fill-button shadow-lg rounded">
                             <label class="sr-only" for="userDate">City</label>
                             <input type="date" class="form-control" id="userDate" placeholder="MM-DD-YYYY">
                         </div>
-                        <div class="col search-button-box shadow-lg rounded">
+                        <div class="col search-button-box animated-fill-button shadow-lg rounded">
                             <button type="submit" class="btn btn-primary" id="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
-                        <div class="col search-button-box shadow-lg rounded">
+                        <div class="col search-button-box animated-fill-button shadow-lg rounded">
                             <button type="submit" class="btn btn-primary" id="random-button">Random</button>
                         </div>
-                        <div class="dropdown">
+                        <div class="dropdown animated-fill-button  shadow-lg rounded">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="save2" data-bs-toggle="dropdown" aria-expanded="false">
                               Saved Dates
                             </button>
@@ -39,7 +40,7 @@
                                 <li><button class="dropdown-item" type="button">2022-09-07</button></li>
                             </ul>
                           </div>
-                        <div class="col del-button-box shadow-lg rounded">
+                        <div class="col del-button-box animated-fill-button shadow-lg rounded">
                             <button style="width:110px;" type="submit" class="btn btn-primary" id="del-button">Clear List</button>
                         </div>
                     </div>
