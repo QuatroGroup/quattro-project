@@ -51,13 +51,21 @@ $("#search-button").on("click", function (event) {
         $(".quoteImage").addClass("visible");
         getNasaData();
         getQuote();
+        savingDates();
     }
 })
 
 $("#random-button").on("click", function (event) {
     // handles the on click of the random button
     event.preventDefault();
-    getRandomDate();
+    getRandomDate(); // runs the getRandomDate function
+})
+
+$("#del-button").on("click", function (event) {
+    // handles the on click of the clear list
+    event.preventDefault();
+    localStorage.clear(); // clears the local storage
+    location.reload(); // reloads page
 })
 
 function getRandomDate() {
@@ -72,6 +80,7 @@ function getRandomDate() {
     $(".quoteImage").addClass("visible");
     getNasaData();
     getQuote();
+    savingDates();
 }
 
 function alertModal(title, body) {
@@ -79,10 +88,47 @@ function alertModal(title, body) {
     $('#alert-modal-title').html(title); //sets title of modal
     $('#alert-modal-body').html(body); // sets body of the modal
     $('#alert-modal').modal('show'); // shows the modal window
-  }
+}
 
-  // localStorage.savedDate = $("#userDate")[0].value;
-  // $("#dropdown-buttons").append('<button class="dropdown-item" type="button">' + userDate + '</button>');
-  //  for (let i = 0; i< savedDate.length; i++) {
-  //    localStorage.getItem([i])
-  //  }
+function savingDates() {
+    if (localStorage.getItem('saved') !== null) {
+        // get the existing array and add - checks if local storage key exists and adds to it
+        enteredDate = $("#userDate")[0].value;
+        saveDates = JSON.parse(localStorage.getItem("saved"));
+        saveDates.push(enteredDate);
+        localStorage.setItem("saved", JSON.stringify(saveDates));
+    } else {
+        // build an array and add - since the key does not exist it builds it
+        enteredDate = $("#userDate")[0].value;
+        saveDates = [enteredDate];
+        localStorage.setItem("saved", JSON.stringify(saveDates));
+    }
+    dropDownHandler();
+}
+
+function dropDownHandler() {
+    // adds local storage dates if they exist to the drop down
+    if (localStorage.getItem('saved') !== null) {
+        saveDates = JSON.parse(localStorage.getItem("saved"));
+        $("#dropdown-buttons").empty();
+        for (let i = 0; i < saveDates.length; i++) {
+            $("#dropdown-buttons").append('<button class="dropdown-item" type="button">' + saveDates[i] + '</button>');
+        }
+    }
+}
+
+// This is a button listener for the remembered cities in the list and processes the call to pull weather
+// from data in localstorage when the button was created.
+$(".dropdown").on("click", ".dropdown-item", function (event) {
+    dateHolder = $(this)[0].textContent;
+    $("#userDate")[0].value = moment(dateHolder).format("YYYY-MM-DD");
+    $("#userDate")[0].textcontent = moment(dateHolder).format("YYYY-MM-DD");
+    $(".quoteImage").addClass("visible");
+    getNasaData();
+    getQuote();
+    savingDates();
+})
+
+// on each load/refresh this runs to make sure the dropdown Saved Dates is populated
+dropDownHandler()
+
