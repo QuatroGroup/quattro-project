@@ -15,8 +15,8 @@ This project calls upon two seperate APIs to bring up a randomized inspirational
 
 ## User Story
 
-As a consumer </br>
-I Want a quote and an astronomy picture that inspires me to start the day.</br>
+As an internet user </br>
+I want a quote and an astronomy picture that inspires me to start the day.</br>
 So that I can aspire to be better.</br>
 
 ## Acceptance Criteria
