@@ -4,7 +4,7 @@
 body { 
 background-color: lightgray;
 background:scroll;
-background-image: url("./assets/media/space-grey.jpeg");
+background-image: url("../media/space-grey.jpeg");
 background-repeat: repeat-y;
 background-attachment: scroll;
 background-size: cover;
@@ -56,7 +56,10 @@ h2{
     background-color: #201F41;
     color: white
 }
-
+h3:hover {
+    animation: animate 1s ease-in-out infinite alternate;
+    font-style: italic;
+}
 h3,h4{
     margin-top: 10px;
     padding: 0px;
@@ -123,16 +126,16 @@ color: white;
 }
 h1{
     font-family: Helvetica;
-    color: 4ababa;
+    color: white;
     animation: animate 1s ease-in-out infinite alternate;
 }
 @keyframes animate{
     from{
-        text-shadow: 0 0 20px #289aab;
+        text-shadow: 0 0 20px #60eaff;
     }
     to{
-        text-shadow: 0 0 30px #289aab,
-                     0 0 10px #289aab;
+        text-shadow: 0 0 30px #60eaff,
+                     0 0 10px #60eaff;
                      
     }
 }
