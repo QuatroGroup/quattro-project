@@ -6,61 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" /> 
+   
+
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Inspire</title>
+    <title>Astronomically Inspirational</title>
 </head>
 <body>
     <header class="d-flex justify-content-center">
-        <h1>Out of this World Imagery and Quote</h1>
+        <h1 class="p-1">Out of this World Imagery and Quote</h1>
     </header>
-
     <main>
         <section class="search-section d-flex justify-content-center">
             <div class="search-box">
-                <h3 class="d-flex justify-content-center">Select Date:</h3>
+                <h3 class="d-flex justify-content-center m-1 mb-2 p-2">Select Date:</h3>
                 <form>
                     <div class="form-row d-flex justify-content-center">
-                        <div class="col-8 search-field shadow-lg rounded">
+                        <div class="col search-field animated-fill-button shadow-lg rounded">
                             <label class="sr-only" for="userDate">City</label>
                             <input type="date" class="form-control" id="userDate" placeholder="MM-DD-YYYY">
                         </div>
-                        <div class="col-2 search-button-box shadow-lg rounded">
+                        <div class="col search-button-box animated-fill-button shadow-lg rounded">
                             <button type="submit" class="btn btn-primary" id="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
-                        <div class="col-2 search-button-box shadow-lg rounded">
+                        <div class="col search-button-box animated-fill-button shadow-lg rounded">
                             <button type="submit" class="btn btn-primary" id="random-button">Random</button>
                         </div>
+                        <div class="dropdown animated-fill-button  shadow-lg rounded">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="save2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Saved Dates
+                            </button>
+                            <ul class="dropdown-menu col" id="dropdown-buttons">
+                                <li><button class="dropdown-item" type="button">2022-09-07</button></li>
+                            </ul>
+                          </div>
+                        <div class="col del-button-box animated-fill-button shadow-lg rounded">
+                            <button style="width:110px;" type="submit" class="btn btn-primary" id="del-button">Clear List</button>
+                        </div>
                     </div>
-                    <div class="date-list-box">
-                        <ul class="list-group col-8" id="date-list"></ul>
-                    </div>
-                    <div class="col-6 del-button-box justify-content-center mt-2 shadow-lg rounded">
-                        <button style="width:250px;" type="submit" class="btn btn-primary" id="del-button">Clear List</button>
-                    </div>
+                    
+                    
                 </form>
             </div>
         </section>
 
         <section class="quoteImage">
-        <div class="d-flex justify-content-center">
-            <h2>Quote</h2>
-        </div>
-        <div class="d-flex justify-content-center">
-            <p id="randomQuote"></p>
-        </div>
-        <div class="d-flex justify-content-center">
-            <p id="randomAuthor"></p>
-        </div>
-        <div class="d-flex justify-content-center">
-            <h3>Inspiring Imagery</h3>
-        </div>
-            <h4 id="nasaTitle"></h4>
-            <p id="nasaCaption"></p>
             <div class="d-flex justify-content-center">
-            <img src="" alt="" id="nasaImage">
-        </div>
+                <h2>Quote</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p id="randomQuote"></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p id="randomAuthor"></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h3>Inspiring Imagery</h3>
+            </div>
+                <h4 class="d-flex justify-content-center mx-5 px-5" id="nasaTitle"></h4>
+                <p id="nasaCaption" class="mx-5 px-5"></p>
+                <div class="d-flex justify-content-center">
+                <img src="" alt="" id="nasaImage">
+            </div>
         </section>
+
+        <div class="modal fade" id="alert-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 id="alert-modal-title" class="modal-title"></h4>
+                </div>
+                <div id="alert-modal-body" class="modal-body"></div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </main>
 
@@ -69,4 +92,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-</html>
+</html>   

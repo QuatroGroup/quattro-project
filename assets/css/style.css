@@ -1,7 +1,6 @@
 .quoteImage {
     visibility: hidden;
 }
-
 body { 
 background-color: lightgray;
 background:scroll;
@@ -10,24 +9,133 @@ background-repeat: repeat-y;
 background-attachment: scroll;
 background-size: cover;
 max-width: auto;
-
 }
-
 img {
-  width:550px;
-  padding: 45px;
+width:550px;
+padding: 45px;
 border: 25px; 
 border-color: white;
-
-
-    
+}
+p{
+  color: green;
+  text-align: center;
+}
+#search-section{
+padding: 5px;
+border-color: #422D53
 }
 
-.button {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
+#random-button{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+#del-button{
+    color:white;
+    background-color: #422D53;
+    border-color: black;
+}
+#search-button{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+#dropdown-button{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+
+h2{
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    border-color: black;
+    background-color: #201F41;
+    color: white
+}
+
+h3,h4{
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    border-color: black;
+    background-color: #201F41;
+    color: white
+}
+#randomQuote{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    border-color: black;
+    background-color: #912e57;
+    color: white;
+}
+#randomAuthor{
+color: white;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+border-color: black;
+background-color: #912e57;
+color: white;
+}
+#nasaCaption{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    border-color: black;
+    background-color: #912e57;
+    color: white;   
+}
+#nasaImage{
+    padding: 20px;
+    background-color: #422D53;
+    border-radius: 30px;
+}
+.animated-fill-button {
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+    padding: 5px;
     cursor: pointer;
-    outline: none;
+    transition: 0.3s all ease-in-out;
+}
+  
+.animated-fill-button:hover {
+    background-color: #912e57 ;
     color: #fff;
+}
+#saved{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+#save2{
+    color: white;
+    background-color: #422D53;
+    border-color: black;
+}
+h1{
+    font-family: Helvetica;
+    color: 4ababa;
+    animation: animate 1s ease-in-out infinite alternate;
+}
+@keyframes animate{
+    from{
+        text-shadow: 0 0 20px #289aab;
+    }
+    to{
+        text-shadow: 0 0 30px #289aab,
+                     0 0 10px #289aab;
+                     
+    }
+}
+button:hover {
+    font-weight: bold;
 }
