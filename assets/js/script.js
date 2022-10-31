@@ -117,7 +117,7 @@ function dropDownHandler() {
     }
 }
 
-// This is a button listener for the remembered cities in the list and processes the call to pull weather
+// This is a button listener for the remembered cities in the list and processes the call to pull date
 // from data in localstorage when the button was created.
 $(".dropdown").on("click", ".dropdown-item", function (event) {
     dateHolder = $(this)[0].textContent;
@@ -126,7 +126,6 @@ $(".dropdown").on("click", ".dropdown-item", function (event) {
     $(".quoteImage").addClass("visible");
     getNasaData();
     getQuote();
-    savingDates();
 })
 
 // on each load/refresh this runs to make sure the dropdown Saved Dates is populated
