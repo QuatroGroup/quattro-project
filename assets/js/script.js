@@ -130,4 +130,3 @@ $(".dropdown").on("click", ".dropdown-item", function (event) {
 
 // on each load/refresh this runs to make sure the dropdown Saved Dates is populated
 dropDownHandler()
-

@@ -1,6 +1,21 @@
 .quoteImage {
     visibility: hidden;
 }
+body { 
+background-color: lightgray;
+background:scroll;
+background-image: url("./assets/media/space-grey.jpeg");
+background-repeat: repeat-y;
+background-attachment: scroll;
+background-size: cover;
+max-width: auto;
+}
+img {
+width:550px;
+padding: 45px;
+border: 25px; 
+border-color: white;
+}
 p{
   color: green;
   text-align: center;
