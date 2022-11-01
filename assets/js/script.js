@@ -128,5 +128,15 @@ $(".dropdown").on("click", ".dropdown-item", function (event) {
     getQuote();
 })
 
+setTimeout(() => {
+    const rocket = document.getElementById('rocket');
+  
+    // 👇️ removes element from DOM
+    rocket.style.display = 'none';
+  
+    // 👇️ hides element (still takes up space on page)
+    // box.style.visibility = 'hidden';
+  }, 6000); // 👈️ time in milliseconds
+
 // on each load/refresh this runs to make sure the dropdown Saved Dates is populated
 dropDownHandler()
