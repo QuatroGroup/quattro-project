@@ -9,7 +9,7 @@ background-repeat: repeat-y;
 background-attachment: scroll;
 background-size: cover;
 max-width: auto;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 img {
 width:550px;
@@ -149,7 +149,7 @@ button:hover {
 }
 .rocket {
     position: absolute;
-    bottom: -600px;
+    bottom: -900px;
     left: 35%;
     animation: fly 5s .1s ease-in;
 }
