@@ -41,7 +41,7 @@ To use this program, a date of the users choice must be selected and a corraspon
 
 ## Mock Up
 
-INSERT IMAGES OR GIF OF WORKING SITE HERE.
+![Website Gif](./assets/media/Group%20Project%201.gif)
 
 ## Credits
 
